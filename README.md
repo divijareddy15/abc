@@ -242,3 +242,13 @@ volumes:
 5. Stop containers but keep data:
 
 * docker-compose down
+* 
+
+
+
+
+
+
+3a.git log --online
+git checkout ui-fixes
+3b.git stash
