@@ -251,4 +251,22 @@ volumes:
 
 3a.git log --online
 git checkout ui-fixes
+
 3b.git stash
+
+
+3c.git pull origin main
+git status
+git add .
+git commit -m "Commit message"
+git pull origin main
+git mergetool
+git add .
+git commit -m "Resolve merge conflict"
+git push origin main
+
+3d.git reflog
+git branch booking-module <commit-sha>
+git checkout booking-module
+
+3e.
