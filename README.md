@@ -285,4 +285,33 @@ git checkout <discountservice-branch-name>
 git stash pop
 
 
-3g.
+3h..1. View a Clean Log
+git log main --oneline --no-merges
+
+git log main --graph --oneline --decorate --no-merges
+
+2. Squash Commits Before Merging
+git checkout main
+
+git merge --squash feature/new-feature
+
+git commit -m "feat: Add new feature to the application"
+
+git branch -d feature/new-feature
+
+3. Rewrite History to Clean Up
+git checkout fix/bug-fix
+
+git rebase -i HEAD~3
+
+git push --force-with-lease origin fix/bug-fix
+
+
+
+
+
+3j.git checkout main
+
+git reset --hard i7j8k9l
+
+git push --force-with-lease origin main
