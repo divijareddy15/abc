@@ -269,4 +269,20 @@ git push origin main
 git branch booking-module <commit-sha>
 git checkout booking-module
 
-3e.
+3e.git rebase -i HEAD~3
+git push --force
+
+3f.# Save your current, uncommitted changes
+git stash push -m "WIP on discountservice"
+
+# Switch to the hotfix branch
+git checkout <hotfix-branch-name>
+
+# After completing and committing the hotfix, switch back to your original branch
+git checkout <discountservice-branch-name>
+
+# Restore your stashed changes
+git stash pop
+
+
+3g.
